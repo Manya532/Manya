@@ -1,0 +1,98 @@
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #007BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pricing-table{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,1);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    transition:ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+   width: 200px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color:#2e2929;
+    letter-spacing: 1px;
+}
+   .card ul {
+    list-style: none;   
+    padding: 0;         
+    margin: 0 0 15px 0;
+}
+
+.card ul li {
+    color: #3a7bd5;
+    margin: 6px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.card p {
+    color: #3b7dc4;
+    margin: 15px ;
+    font-weight:1.5rem;
+}
+
+.card h3 {
+    color: #007BFF;
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.card button {
+    background: #ffffff;
+    color:  #007BFF;
+    border: 2px solid #007BFF;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight:bold;
+    
+}
+ .card:nth-child(2) button { 
+    background: #007BFF;
+    color: #ffffff;
+ }
+
+.card button:hover {
+    background:#87bef8;
+   
+}
+
+
+@media (max-width: 960px) {
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
